@@ -32,6 +32,7 @@ public class AddFriendFragment extends Fragment {
     private InputMethodManager inputMethodManager;
 
 
+
     static AddFriendFragment newInstance(int count) {
         // Fragemnt02 インスタンス生成
         AddFriendFragment AddFriendFragment = new AddFriendFragment();
@@ -134,4 +135,4 @@ public class AddFriendFragment extends Fragment {
 
 
 
-//変更
+//お試し
