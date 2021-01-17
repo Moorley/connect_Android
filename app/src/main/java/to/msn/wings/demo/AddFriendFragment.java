@@ -21,6 +21,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.view.MotionEvent;
 
 
+//お試し
+
 public class AddFriendFragment extends Fragment {
     private int cnt = 0;
     EditText addfriend;
