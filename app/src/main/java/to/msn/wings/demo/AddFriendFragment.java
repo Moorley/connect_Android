@@ -135,4 +135,4 @@ public class AddFriendFragment extends Fragment {
 
 
 
-//お試し
+//お試し　羨ましい
