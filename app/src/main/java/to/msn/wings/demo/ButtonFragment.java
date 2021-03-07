@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import com.beardedhen.androidbootstrap.BootstrapButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,12 +18,9 @@ public class ButtonFragment extends Fragment{
 
     @Override
 //  onCreateViewで画面を作る
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_button,
-                container, false);
+        return inflater.inflate(R.layout.fragment_button, container, false);
     }
 
 
@@ -31,7 +28,7 @@ public class ButtonFragment extends Fragment{
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button friendsbtn = view.findViewById(R.id.friendsbtn);
+        BootstrapButton friendsbtn = view.findViewById(R.id.friendsbtn);
         friendsbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +37,7 @@ public class ButtonFragment extends Fragment{
             }
         });
 
-        Button sentbtn = view.findViewById(R.id.sentbtn);
+        BootstrapButton sentbtn = view.findViewById(R.id.sentbtn);
         sentbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +46,7 @@ public class ButtonFragment extends Fragment{
             }
         });
 
-        Button recivebtn = view.findViewById(R.id.recivebtn);
+        BootstrapButton recivebtn = view.findViewById(R.id.recivebtn);
         recivebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +55,7 @@ public class ButtonFragment extends Fragment{
             }
         });
 
-        Button mypagebtn = view.findViewById(R.id.mypagebtn);
+        BootstrapButton mypagebtn = view.findViewById(R.id.mypagebtn);
         mypagebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

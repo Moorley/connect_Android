@@ -17,13 +17,6 @@ import android.widget.ArrayAdapter;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.widget.Toast;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import android.widget.TextView;
-
-import java.util.Objects;
 import java.util.ArrayList;
 
 
@@ -151,7 +144,7 @@ public class FriendsListFragment extends Fragment {
 //                itemIds.add(itemId);
 //            }
 //            cursor.close();
-    }
+}
 
 
 

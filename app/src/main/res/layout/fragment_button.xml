@@ -1,53 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android-bootstrap="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingTop="?attr/actionBarSize">
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
 
     <LinearLayout
-        android:layout_width="408dp"
-        android:layout_height="93dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="582dp">
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
 
-        <Button
+        <com.beardedhen.androidbootstrap.BootstrapButton
             android:id="@+id/friendsbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="friendsbtn_onClick"
             android:text="友人"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-             />
+            android:layout_margin="5dp"
+            app:bootstrapSize="sm"
+            app:roundedCorners="true"
+            app:bootstrapBrand="success" />
 
-        <Button
+        <com.beardedhen.androidbootstrap.BootstrapButton
             android:id="@+id/sentbtn"
-            android:text="送信"
-            android:onClick="sent_onClick"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_weight="1"/>
-
-        <Button
-            android:id="@+id/recivebtn"
-            android:text="受信"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="recive_onClick"/>
+            android:onClick="sent_onClick"
+            android:text="送信"
+            android:layout_margin="5dp"
+            app:bootstrapSize="sm"
+            app:roundedCorners="true" />
 
-        <Button
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/recivebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="recive_onClick"
+            android:text="受信"
+            android:layout_margin="5dp"
+            app:bootstrapSize="sm"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
             android:id="@+id/mypagebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="mypage_onClick"
             android:text="設定"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_weight="1"/>
+            android:layout_margin="5dp"
+            app:bootstrapSize="sm"
+            app:roundedCorners="true" />
 
     </LinearLayout>
 
+</LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
